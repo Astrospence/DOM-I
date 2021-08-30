@@ -87,3 +87,18 @@ const visionH4 = document.querySelector(".text-content:nth-of-type(5) > h4");
   visionH4.textContent = siteContent["main-content"]["product-h4"];
 const visionP = document.querySelector(".text-content:nth-of-type(5) > p");
   visionP.textContent = siteContent["main-content"]["product-content"];
+
+
+const contact = document.querySelector('.contact');
+const contactH4 = contact.querySelector('h4');
+const contactP1 = contact.querySelector('p:nth-of-type(1)');
+const contactP2 = contact.querySelector('p:nth-of-type(2)');
+const contactP3 = contact.querySelector('p:nth-of-type(3)');
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+contactP1.textContent = siteContent["contact"]["address"];
+contactP2.textContent = siteContent["contact"]["phone"];
+contactP3.textContent = siteContent["contact"]["email"];
+
+const footer = document.querySelector('footer');
+const footerP = document.querySelector('p');
+footerP.textContent = siteContent["footer"]["copyright"];

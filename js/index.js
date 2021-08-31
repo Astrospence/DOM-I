@@ -58,7 +58,12 @@ const links = header.querySelectorAll("nav > a");
 for (let i = 0; i < links.length; i++){
   links[i].style.color = "green";
 }
-
+const mtg = document.createElement("h4");
+mtg.textContent = "MTG";
+document.querySelector("header > nav").prepend(mtg);
+const lego = document.createElement("h4");
+lego.textContent = "Lego";
+document.querySelector("header > nav").appendChild(lego);
 
 const sectionCta = document.querySelector(".cta");
   const ctaH1 = sectionCta.querySelector("h1");

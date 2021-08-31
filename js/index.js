@@ -41,13 +41,13 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const header = document.querySelector('header');
-  const aServ = header.querySelector('a:nth-of-type(1)');
-  const aProd = header.querySelector('a:nth-of-type(2)');
-  const aVis = header.querySelector('a:nth-of-type(3)');
-  const aFea = header.querySelector('a:nth-of-type(4)');
-  const aAbout = header.querySelector('a:nth-of-type(5)');
-  const aCont = header.querySelector('a:nth-of-type(6)');
+const header = document.querySelector("header");
+  const aServ = header.querySelector("a:nth-of-type(1)");
+  const aProd = header.querySelector("a:nth-of-type(2)");
+  const aVis = header.querySelector("a:nth-of-type(3)");
+  const aFea = header.querySelector("a:nth-of-type(4)");
+  const aAbout = header.querySelector("a:nth-of-type(5)");
+  const aCont = header.querySelector("a:nth-of-type(6)");
 aServ.textContent = siteContent["nav"]["nav-item-1"];
 aProd.textContent = siteContent["nav"]["nav-item-2"];
 aVis.textContent = siteContent["nav"]["nav-item-3"];
@@ -56,49 +56,50 @@ aAbout.textContent = siteContent["nav"]["nav-item-5"];
 aCont.textContent = siteContent["nav"]["nav-item-6"];
 
 
-const sectionCta = document.querySelector('.cta');
-  const ctaH1 = sectionCta.querySelector('h1');
-  const ctaButton = sectionCta.querySelector('button');
-  const ctaImg = document.getElementById('cta-img');
+const sectionCta = document.querySelector(".cta");
+  const ctaH1 = sectionCta.querySelector("h1");
+  const ctaButton = sectionCta.querySelector("button");
+  const ctaImg = document.getElementById("cta-img");
 ctaH1.textContent = siteContent["cta"]["h1"];
 ctaButton.textContent = siteContent["cta"]["button"];
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
-const featuresH4 = document.querySelector(".text-content:nth-of-type(1) > h4");
+const featuresH4 = document.querySelector(".top-content > .text-content:nth-of-type(1) > h4");
   featuresH4.textContent = siteContent["main-content"]["features-h4"];
-const featuresP = document.querySelector(".text-content:nth-of-type(1) > p");
+const featuresP = document.querySelector(".top-content > .text-content:nth-of-type(1) > p");
   featuresP.textContent = siteContent["main-content"]["features-content"];
-const aboutH4 = document.querySelector(".text-content:nth-of-type(2) > h4");
+const aboutH4 = document.querySelector(".top-content > .text-content:nth-of-type(2) > h4");
   aboutH4.textContent = siteContent["main-content"]["about-h4"];
-const aboutP = document.querySelector(".text-content:nth-of-type(2) > p");
+const aboutP = document.querySelector(".top-content > .text-content:nth-of-type(2) > p");
   aboutP.textContent = siteContent["main-content"]["about-content"];
+
 const midImg = document.getElementById("middle-img");
   midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
-const servicesH4 = document.querySelector(".text-content:nth-of-type(3) > h4");
+
+const servicesH4 = document.querySelector(".bottom-content > .text-content:nth-of-type(1) > h4");
   servicesH4.textContent = siteContent["main-content"]["services-h4"];
-const servicesP = document.querySelector(".text-content:nth-of-type(3) > p");
+const servicesP = document.querySelector(".bottom-content > .text-content:nth-of-type(1) > p");
   servicesP.textContent = siteContent["main-content"]["services-content"];
-const prodH4 = document.querySelector(".text-content:nth-of-type(4) > h4");
+const prodH4 = document.querySelector(".bottom-content > .text-content:nth-of-type(2) > h4");
   prodH4.textContent = siteContent["main-content"]["product-h4"];
-const prodP = document.querySelector(".text-content:nth-of-type(4) > p");
+const prodP = document.querySelector(".bottom-content > .text-content:nth-of-type(2) > p");
   prodP.textContent = siteContent["main-content"]["product-content"];
-const visionH4 = document.querySelector(".text-content:nth-of-type(5) > h4");
+const visionH4 = document.querySelector(".bottom-content > .text-content:nth-of-type(3) > h4");
   visionH4.textContent = siteContent["main-content"]["product-h4"];
-const visionP = document.querySelector(".text-content:nth-of-type(5) > p");
+const visionP = document.querySelector(".bottom-content > .text-content:nth-of-type(3) > p");
   visionP.textContent = siteContent["main-content"]["product-content"];
 
 
-const contact = document.querySelector('.contact');
-const contactH4 = contact.querySelector('h4');
-const contactP1 = contact.querySelector('p:nth-of-type(1)');
-const contactP2 = contact.querySelector('p:nth-of-type(2)');
-const contactP3 = contact.querySelector('p:nth-of-type(3)');
+const contact = document.querySelector(".contact");
+const contactH4 = contact.querySelector("h4");
+const contactP1 = contact.querySelector("p:nth-of-type(1)");
+const contactP2 = contact.querySelector("p:nth-of-type(2)");
+const contactP3 = contact.querySelector("p:nth-of-type(3)");
 contactH4.textContent = siteContent["contact"]["contact-h4"];
 contactP1.textContent = siteContent["contact"]["address"];
 contactP2.textContent = siteContent["contact"]["phone"];
 contactP3.textContent = siteContent["contact"]["email"];
 
-const footer = document.querySelector('footer');
-const footerP = document.querySelector('p');
-footerP.textContent = siteContent["footer"]["copyright"];
+const footerP = document.querySelector("footer > p");
+  footerP.textContent = siteContent["footer"]["copyright"];

@@ -54,6 +54,10 @@ aVis.textContent = siteContent["nav"]["nav-item-3"];
 aFea.textContent = siteContent["nav"]["nav-item-4"];
 aAbout.textContent = siteContent["nav"]["nav-item-5"];
 aCont.textContent = siteContent["nav"]["nav-item-6"];
+const links = header.querySelectorAll("nav > a");
+for (let i = 0; i < links.length; i++){
+  links[i].style.color = "green";
+}
 
 
 const sectionCta = document.querySelector(".cta");
